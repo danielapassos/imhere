@@ -36,11 +36,6 @@ export function Home() {
     ])
   }
 
-  // function handleState(value:string) {
-  //   setParticipantName(value)
-  //   console.log(participantName)
-  // }
-
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>
@@ -72,7 +67,7 @@ export function Home() {
           <Participant 
           key = {item}
           name={item}
-          onRemove={() => handleParticipantRemove(`Daniela`)}
+          onRemove={() => handleParticipantRemove(participantName)}
           />
         )}
         showsVerticalScrollIndicator={false}
